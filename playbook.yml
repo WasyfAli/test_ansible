@@ -1,0 +1,9 @@
+---
+- name: Set User
+  hosts: dns
+  gather_facts: false
+  become: false
+
+  tasks:
+    - name: Pinging Host
+      action: ping
